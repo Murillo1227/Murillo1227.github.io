@@ -1,0 +1,165 @@
+
+
+h1{
+  background: linear-gradient(6200deg,#BAF6FF,#BAFFE8,#3DF8FF,#19ACFF);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  border-bottom-right-radius:5mm;
+  border-bottom-left-radius:5mm;
+  text-align: center;
+  border: 2px #5A5A5A inset;
+}
+
+p,h1,h2,h3,h4{
+  font-family: serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+footer a {
+  color: #00D9FF;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: color 0.4s ease;
+}
+
+footer a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(192deg,#00F6FF,#16FFAA,#0300FF,#FF167C,#61FFB6);
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+footer a:hover {
+  color: linear-gradient(192deg,#16F0FF,#16FF5F,#1636FF,#9916FF,#FF168E);
+}
+
+footer a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Efecto de fondo animado */
+.footer-gradient {
+  background: linear-gradient(-45deg, #FF6EC4, #73F581, #33CCFF, #A2A2A2,#FF0D5F,#FF0D0D);
+  background-size: 400% 400%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  bottom: 0;
+  animation: linearGradient 15s infinite;
+  animation-delay: 0.1ms;
+}
+
+@keyframes linearGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  
+  0% {
+    box-shadow: 0 0 10px 1px #393939, 0 0 15px 3px #FFF1BC, 0 0 3px 1px #F9FF9D;
+  }
+  50% {
+    box-shadow: 0 0 10px 2px #E5FF76, 0 0 10px 4px #0FFFC0, 0 0 10px 1px #0D7DFF;
+  }
+  100% {
+    box-shadow: 0 0 10px 1px #005DFF, 0 0 10px 12px #FF0000, 0 0 14px 2px #FF0000;
+  }
+}
+
+e{
+  color: #fff;
+}
+
+
+    /* Modo oscuro */
+    body.dark-mode {
+      background: linear-gradient(100deg,#000000,#4D4D4D,#000000); /* Fondo oscuro */
+      color: #B3B3B3; /* Texto claro */
+    }
+
+    /* Estilo para el botón de cambio */
+    .toggle-btn {
+      position: static;
+      top: 5px;
+      right: 20px;
+      padding: 10px 20px;
+      background: linear-gradient(6200deg,#BAF6FF,#BAFFE8,#3DF8FF,#19ACFF);
+      color: #FFFFFF;
+      border: solid #757575;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5mm/5vh;
+      transition: background-color 0.1s ease;
+    }
+
+    .toggle-btn:hover {
+      background-color: #555;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 1s, color 1.5s;
+      color: #000000; /* Texto oscuro por defecto */
+    }
+    
+    @keyframes mosaicEffect {
+  0% {
+    background-color: #FFBDB7; /* Rojo claro */
+    background-size: 100% 100%;
+  }
+  25% {
+    background-color: #11FFF6; /* Azul cielo claro */
+    background-size: 150% 150%;
+  }
+  50% {
+    background-color: #9AFF2F; /* Amarillo verdoso claro */
+    background-size: 200% 200%;
+  }
+  75% {
+    background-color: #02FFFC; /* Azul claro */
+    background-size: 100% 100%;
+  }
+  100% {
+    background-color: #A6FF08; /* Rojo claro */
+    background-size: 150% 150%;
+  }
+}
+
+body {
+  background: #353535; /* Rojo claro inicial */
+  background-size: 100% 100%;
+  background-image: linear-gradient(45deg, #FF0505 25%, transparent 25%, transparent 50%, #FF1700 50%, #FF1700 75%, transparent 75%, transparent);
+  background-size: 56.57px 56.57px;
+  animation: mosaicEffect 30s infinite ease-in-out;
+  height: 50vh;
+  /* Evita que el fondo se repita fuera de la vista */
+}
