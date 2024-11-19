@@ -45,7 +45,7 @@ footer a::after {
   bottom: -5px;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.3s ease;
+  transition: transform 0.3ms ease;
 }
 
 footer a:hover {
@@ -116,7 +116,7 @@ e{
       cursor: pointer;
       font-size: 16px;
       border-radius: 5mm/5vh;
-      transition: background-color 0.1s ease;
+      transition: background-color 1s ease;
     }
 
     .toggle-btn:hover {
@@ -127,7 +127,7 @@ e{
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      transition: background-color 1s, color 1.5s;
+      transition: background-color 1.5s, color 1.5s;
       color: #000000; /* Texto oscuro por defecto */
     }
     
